@@ -125,6 +125,7 @@ void waitOneMinute() {
 }
 
 void controlMotors() {
+    \\thread1 corresponde ao acionamento do motorX e thread2 para o motor y
     pthread_t thread1, thread2;
 
     if (com & 0x02) {
