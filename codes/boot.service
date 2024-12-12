@@ -1,0 +1,17 @@
+[Unit]
+Description=Meu script para testes
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/var/www/html/telescope/sucesso
+User=root
+Type=simple
+IOSchedulingClass=realtime
+IOSchedulingPriority=0
+CPUSchedulingPolicy=rr
+CPUSchedulingPriority=99
+
+[Install]
+WantedBy=multi-user.target
+

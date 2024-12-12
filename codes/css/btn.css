@@ -1,0 +1,114 @@
+.btnBox{
+	margin: 0px;
+	position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnRow{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 100%;
+	position: relative;
+	margin:0;
+	padding:0;
+}
+
+.btn{
+	padding:10px 35px;
+	border:none;
+	background: black;
+	color:white;
+	font-size: 20px;
+	position: relative;
+    transition-duration: 0.25s;
+	clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+	clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 40%, 100% 60%, 75% 93.3%, 25% 93.3%, 0% 60%, 0% 40%);
+}
+
+.btn:hover{
+	background: indianred;
+}
+
+.btnSpace{
+	margin:10px 50px;
+}
+
+.view{
+	background: rgb(223,110,110);
+    background: linear-gradient(70deg, rgba(223,110,110,1) 0%, rgba(163,58,58,1) 70%, rgba(167,49,88,1) 85%, rgba(170,22,22,1) 100%); 
+	border-radius: 25%/50%;
+	padding:10px 35px;
+	transition-duration: 0.25s;
+	border: none;
+	color: white;
+}
+
+.view:hover{
+	animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(223,110,110, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(223,110,110, 0);
+  }
+}
+
+.sendBox{
+	border: none;
+	width: 70%;
+  padding: 5px; 
+	margin: 10px 0 20px 0;
+  border-radius: 5% / 50%;
+  transition-duration: 0.1s;
+}
+
+.mini{
+	width: 23%;
+}
+
+.big:hover{
+	width: 100%;
+  border-radius: 10% / 30%
+}
+
+#right-up{
+	transform: rotate(-30deg);
+	bottom :-12px;
+	left:-14px;
+}
+
+#left-up{
+	transform: rotate(-150deg);
+	bottom :-12px;
+	right:-14px;
+}
+
+#right-down{
+	transform: rotate(30deg);
+	top :-12px;
+	left: -14px;
+}
+
+#left-down{
+	transform: rotate(150deg);
+	top :-14px;
+	right:-14px;
+}
+
+.clip1{
+	
+	clip-path: polygon(5% 50%, 50% 10%, 95% 50%, 50% 90%);
+	
+}
+
+.clip2{
+	clip-path: polygon();
+	top :-13px;
+	margin: 0 3px;
+}
